@@ -1,75 +1,20 @@
-# Nuxt Minimal Starter
+# minatonami.github.io
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal portfolio site for Lionel Chong — live at https://minatonami.github.io/.
 
-## Setup
+A single-page Nuxt 3 site, statically generated and deployed to GitHub Pages by
+`.github/workflows/nuxtjs.yml` on every push to `main`.
 
-Make sure to install dependencies:
+## Editing content
 
-```bash
-# npm
-npm install
+All copy lives in [`data/profile.ts`](data/profile.ts) (work, projects, experience, stack).
+Layout is in `app.vue`, styles in `assets/main.css`, and the hero diagram in
+`components/FleetDiagram.vue`.
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Local development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+npm ci
+npm run dev        # http://localhost:3000
+npm run generate   # static output in .output/public
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
